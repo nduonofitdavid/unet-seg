@@ -39,5 +39,3 @@ VALID_LABEL_IDS = [7, 8, 11, 12, 13, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28,
 LABEL_TO_TRAINID = torch.full((256,), IGNORE_INDEX, dtype=torch.long)
 LABEL_TO_TRAINID[VALID_LABEL_IDS] = torch.arange(NUM_CLASSES)
 TRAINID_TO_CATID = torch.tensor([0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 4, 5, 5, 6, 6, 6, 6, 6, 6])
-
-

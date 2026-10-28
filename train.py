@@ -92,3 +92,4 @@ for names, scores in [(CLASS_NAMES, val_metrics['class_iou']), (CATEGORY_NAMES, 
   for name, score in zip(names, scores):
     print(f'{name:>14}: {score.item():.4f}')
   print()
+  
